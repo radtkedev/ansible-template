@@ -1,0 +1,4 @@
+template_var: "1"
+template_var_list:
+  - one
+  - two

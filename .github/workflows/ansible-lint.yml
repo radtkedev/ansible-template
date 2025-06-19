@@ -1,0 +1,10 @@
+name: Run ansible-lint with pull requests or pushes
+on: [pull_request,push]
+jobs:
+  AnsibleLint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Ansible lint on main branch
+        uses: ansible/ansible-lint@main
